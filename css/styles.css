@@ -122,16 +122,11 @@ padding: 24px 0;
     cursor: pointer;
     margin: 0 auto;
     text-align: center;
-    display: block;
-    /* Дает возможность центрировать через margin */
-    min-width: 169px;
-    /* Минимальная ширина кнопки */
-    height: 56px;
-    /* Высота кнопки */
-    border: none;
-    /* Убирает стандартные границы */
-    border-radius: 4px;
-    /* Закругление углов */
+    display: block; 
+    min-width: 169px; 
+    height: 56px; 
+    border: none; 
+    border-radius: 4px; 
 }
  .title-button:hover,
  .title-button:focus {
@@ -156,18 +151,14 @@ padding: 24px 0;
      border: 0;
 }
 .features-list {
-    display: flex;
-    /* Размещает пункты списка в ряд */
-    gap: 24px;
-    /* Расстояние между элементами списка */
-    list-style: none;
-    /* Убирает маркеры списка */
+    display: flex; 
+    gap: 24px; 
+    list-style: none; 
     padding: 0;
     margin: 0;
 }
 .features-item {
-    width: calc((100% - 72px) / 4);
-    /* Равномерное распределение ширины */
+    width: calc((100% - 72px) / 4); 
 }
 .title-list-features {
     font-weight: 500;
@@ -175,8 +166,7 @@ padding: 24px 0;
     line-height: 1.2;
     color: #2e2f42;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    /* Добавляет отступ между заголовком и текстом */
+    margin-bottom: 8px; 
 }
 .features-text {
     font-size: 16px;
@@ -190,11 +180,10 @@ padding: 24px 0;
 
  /* Team-card 2 */
 
- .team {
-    padding-top: 0px;
-    padding-bottom: 0%;
-    background-color: #F4F4FD
- }
+.team {
+    padding: 120px 0;
+    background-color: #f4f4fd;
+}
  .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -203,11 +192,24 @@ padding: 24px 0;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
  }
-.team-container, .team-card {
+.team-container {
+    display: flex;
+    /* Располагаем карточки в ряд */
+    gap: 24px;
+    /* Отступы между карточками */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-card {
     background-color: #ffffff;
- }
-
+    width: calc((100% - 72px) / 4);
+    /* Равномерное распределение карточек */
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
 .team-list-title {
     font-weight: 500;
     font-size: 20px;
@@ -222,28 +224,27 @@ padding: 24px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #434455;
-}
-.team-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
+    color: #434455; 
+} 
+.team-info {
+    padding: 32px 0; 
+} 
 /* Portfolio-card 3*/
 
 .portfolio {
     background-color: #f4f4fd;
+    padding: 120px 0;
 }
 
 .portfolio-card {
-    display: block;
-    padding-bottom: 24px;
-    padding-right: 4px;
-
+    width: calc((100% - 48px) / 3); 
+    border: 1px solid #e7e9fc;
+    overflow: hidden;
 }
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 24px;
 }
 
 .port-title {
@@ -254,6 +255,7 @@ padding: 24px 0;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .portfolio-container {
@@ -274,6 +276,9 @@ padding: 24px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+.portfolio-info {
+    padding: 32px 16px;
 }
 /*Foot*/
 .footer {
