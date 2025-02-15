@@ -1,5 +1,5 @@
 *
-
+/* Osnova */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -15,9 +15,22 @@ ul {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
+img {
+    display: block;
+}
+.section {
+    padding: 188px 0;
+}
+ .conteiner {
+     width: 1158px;
+     padding: 0 15px;
+     margin: 0 auto;
+}
+/* Head */
 .header {
     padding-left: 15px;
     padding-top: 15px;
+    border-bottom: 1px solid #e7e9fc;
 }
 .header-conteiner {
     display: flex;
@@ -50,6 +63,8 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
+    padding: 24px 0
 }
 .text-studio {
     color: #2e2f42;
@@ -61,6 +76,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 text-decoration: none;
+padding: 24px 0;
 }
  .contact-link:hover,
  .contact-link:focus {
@@ -72,28 +88,18 @@ text-decoration: none;
      line-height: 1.5;
      color: #2e2f42;
      letter-spacing: 0.02em;
-
- }
-
+    padding: 24px 0;
+}
  .nav-link:hover,
  .nav-link:focus {
      color: #404bbf;
-
- } 
+} 
  .address-block {
     font-style: normal;
  }
+ /* Main osnov*/
  .main-page {
-    background-color: #2e2f42;
-    display: f;
-    align-items: center
-
- }
- .conteiner {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-
+    background-color: #2e2f42
  }
  .title {
     font-size: 56px;
@@ -131,7 +137,7 @@ text-decoration: none;
     color: #434455;
  }
 
- /* Team-card */
+ /* Team-card 2 */
 
  .team {
     padding-top: 0px;
@@ -172,7 +178,7 @@ text-decoration: none;
     flex-wrap: wrap;
 }
 
-/* Portfolio-card */
+/* Portfolio-card 3*/
 
 .portfolio {
     background-color: #f4f4fd;
@@ -218,6 +224,7 @@ text-decoration: none;
     letter-spacing: 0.02em;
     color: #434455;
 }
+/*Foot*/
 .footer {
     background-color: #2e2f42;
 }
@@ -239,7 +246,4 @@ text-decoration: none;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-}
-.section {
-    padding: 120px 0;
 }
