@@ -1,3 +1,5 @@
+*
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -9,6 +11,35 @@ a {
 
 ul {
     list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.header {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.header-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.logo-info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.address-block {
+    margin-left: auto;
+}
+.contact-conteiner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .logo {
@@ -54,6 +85,14 @@ text-decoration: none;
  }
  .main-page {
     background-color: #2e2f42;
+    display: f;
+    align-items: center
+
+ }
+ .conteiner {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 
  }
  .title {
@@ -62,6 +101,7 @@ text-decoration: none;
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    margin: 0 auto;
  }
  .title-button {
     background-color: #4d5ae5;
@@ -70,6 +110,8 @@ text-decoration: none;
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
  }
  .title-button:hover,
  .title-button:focus {
@@ -88,7 +130,12 @@ text-decoration: none;
     letter-spacing: 0.02em;
     color: #434455;
  }
+
+ /* Team-card */
+
  .team {
+    padding-top: 0px;
+    padding-bottom: 0%;
     background-color: #F4F4FD
  }
  .team-title {
@@ -120,8 +167,26 @@ text-decoration: none;
     text-align: center;
     color: #434455;
 }
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Portfolio-card */
+
 .portfolio {
     background-color: #f4f4fd;
+}
+
+.portfolio-card {
+    display: block;
+    padding-bottom: 24px;
+    padding-right: 4px;
+
+}
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .port-title {
@@ -174,4 +239,7 @@ text-decoration: none;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+}
+.section {
+    padding: 120px 0;
 }
