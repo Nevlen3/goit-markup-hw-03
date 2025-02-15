@@ -197,19 +197,16 @@ padding: 24px 0;
     margin-bottom: 72px;
  }
 .team-container {
-    display: flex;
-    /* Располагаем карточки в ряд */
-    gap: 24px;
-    /* Отступы между карточками */
+    display: flex; 
+    gap: 24px; 
     flex-wrap: wrap;
     justify-content: center;
 }
 .team-card {
     background-color: #ffffff;
-    width: calc((100% - 72px) / 4);
-    /* Равномерное распределение карточек */
+    width: calc((100% - 72px) / 4); 
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0px 0px 4px 4px;
     overflow: hidden;
 }
 .team-list-title {
