@@ -101,17 +101,19 @@ padding: 24px 0;
  }
  /* Main osnov*/
  .main-page {
-    background-color: #2e2f42
+    background-color: #2e2f42;
+    text-align: center;
  }
  .title {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    max-width: 496px;
     color: #ffffff;
     margin: 0 auto;
  }
- .title-button {
+.title-button {
     background-color: #4d5ae5;
     font-weight: 500;
     line-height: 1.5;
@@ -120,11 +122,22 @@ padding: 24px 0;
     cursor: pointer;
     margin: 0 auto;
     text-align: center;
- }
+    display: block;
+    /* Дает возможность центрировать через margin */
+    min-width: 169px;
+    /* Минимальная ширина кнопки */
+    height: 56px;
+    /* Высота кнопки */
+    border: none;
+    /* Убирает стандартные границы */
+    border-radius: 4px;
+    /* Закругление углов */
+}
  .title-button:hover,
  .title-button:focus {
     background-color: #404bbf;
  }
+ /* Features */
  .title-features {
     font-weight: 500;
     font-size: 20px;
@@ -132,11 +145,47 @@ padding: 24px 0;
     color: #2e2f42;
     letter-spacing: 0.02em;
  }
- .features-text {
+.visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     padding: 0;
+     margin: -1px;
+     overflow: hidden;
+     clip: rect(0, 0, 0, 0);
+     border: 0;
+}
+.features-list {
+    display: flex;
+    /* Размещает пункты списка в ряд */
+    gap: 24px;
+    /* Расстояние между элементами списка */
+    list-style: none;
+    /* Убирает маркеры списка */
+    padding: 0;
+    margin: 0;
+}
+.features-item {
+    width: calc((100% - 72px) / 4);
+    /* Равномерное распределение ширины */
+}
+.title-list-features {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    /* Добавляет отступ между заголовком и текстом */
+}
+.features-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+ .features {
+    padding: 120px 0;
  }
 
  /* Team-card 2 */
