@@ -196,15 +196,12 @@ padding: 24px 0;
     text-transform: capitalize;
     margin-bottom: 72px;
  }
-.team-container {
-    display: flex; 
-    gap: 24px; 
-} 
-.team-card {
-    background-color: #fff;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-} 
+ .team-list {
+     display: flex;
+     gap: 24px;
+
+ }
+
 .team-list-title {
     font-weight: 500;
     font-size: 20px;
@@ -213,6 +210,11 @@ padding: 24px 0;
     text-align: center;
     color: #2e2f42;
     margin-bottom: 8px;
+}
+.team-card {
+    background-color: #fff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-card-text {
     font-weight: 400;
@@ -277,10 +279,7 @@ padding: 24px 0;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-}
-.portfolio-container {
-
-}
+} 
 /*Foot*/
 .footer {
     background-color: #2e2f42;
